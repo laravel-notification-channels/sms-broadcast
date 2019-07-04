@@ -18,5 +18,12 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\SmsBroadcast\\SmsBroadcastServiceProvider"
+            ]
+        }
     }
 }

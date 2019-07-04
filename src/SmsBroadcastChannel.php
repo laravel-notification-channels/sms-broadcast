@@ -21,7 +21,7 @@ class SmsBroadcastChannel
             return;
         }
 
-        $message = $notification->toSmsBroadcast();
+        $message = $notification->toSmsBroadcast($notifiable);
 
         if (is_string($message)) {
             $message = new SmsBroadcastMessage($message);
