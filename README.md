@@ -20,6 +20,13 @@ It uses my [Sms Broadcast PHP package](https://github.com/atymic/sms-broadcast-p
 
 ## Installation
 
+Install the package using composer
+
+```bash
+composer require atymic/laravel-notification-channel-sms-broadcast
+```
+
+
 Add the configuration to your `services.php` config file:
 
 ```php
