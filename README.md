@@ -46,7 +46,7 @@ class AccountApproved extends Notification
         return [SmsBroadcastChannel::class];
     }
 
-    public function toSmsBroadcast($notifiable)
+    public function toSmsbroadcast($notifiable)
     {
         return (new SmsBroadcastMessage)
             ->content("Task #{$notifiable->id} is complete!");
@@ -54,10 +54,10 @@ class AccountApproved extends Notification
 }
 ```
 
-In your notifiable model, make sure to include a `routeNotificationForSmsBroadcast()` method, which returns an australian phone number.
+In your notifiable model, make sure to include a `routeNotificationForSmsbroadcast()` method, which returns an australian phone number.
 
 ```php
-public function routeNotificationForSmsBroadcast()
+public function routeNotificationForSmsbroadcast()
 {
     return $this->phone; // 0412345678 or 6142345678
 }

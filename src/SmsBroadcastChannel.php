@@ -4,7 +4,6 @@ namespace NotificationChannels\SmsBroadcast;
 
 use Atymic\SmsBroadcast\Api\Client;
 use Illuminate\Notifications\Notification;
-use NotificationChannels\SmsBroadcast\Exceptions\CouldNotSendNotification;
 
 class SmsBroadcastChannel
 {

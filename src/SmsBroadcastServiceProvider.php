@@ -14,6 +14,11 @@ class SmsBroadcastServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(Client::class, function ($app) {
+            if (empty($app['config']['services.smsbroadcast.username'])
+                || empty($app['config']['services.smsbroadcast.password'])) {
+                throw new \InvalidArgumentException('Missing SMS broadcast config in services');
+            }
+
             return ClientFactory::create(
                 $app['config']['services.smsbroadcast.username'],
                 $app['config']['services.smsbroadcast.password'],
