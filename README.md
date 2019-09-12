@@ -1,6 +1,6 @@
 # Sms Broadcast Notification Channel
 
-This package makes it easy to send notifications using [Sms Broadcast](https://www.smsbroadcast.com.au/) with Laravel > 5.6.
+This package makes it easy to send notifications using [Sms Broadcast](https://www.smsbroadcast.com.au/) with Laravel > 5.6 & 6.0.
 
 It uses my [Sms Broadcast PHP package](https://github.com/atymic/sms-broadcast-php) under the hood.
 
@@ -23,9 +23,8 @@ It uses my [Sms Broadcast PHP package](https://github.com/atymic/sms-broadcast-p
 Install the package using composer
 
 ```bash
-composer require atymic/laravel-notification-channel-sms-broadcast
+composer require laravel-notification-channels/sms-broadcast
 ```
-
 
 Add the configuration to your `services.php` config file:
 

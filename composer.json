@@ -1,14 +1,22 @@
 {
-    "name": "atymic/laravel-notification-channel-sms-broadcast",
+    "name": "laravel-notification-channels/sms-broadcast",
     "description": "SMS Broadcast Notification Channel",
-    "homepage": "https://github.com/atymic/laravel-notification-channel-sms-broadcast",
+    "homepage": "http://laravel-notification-channels.com/",
     "license": "MIT",
     "require": {
         "php": ">=7.2",
         "atymic/sms-broadcast": "^1.0",
-        "illuminate/notifications": "^5.6|^5.7|^5.8",
-        "illuminate/support": "^5.6|^5.7|^5.8"
+        "illuminate/notifications": "~5.6 || ~6.0",
+        "illuminate/support": "~5.6 || ~6.0"
     },
+    "authors": [
+        {
+            "name": "atymic",
+            "email": "atymicq@gmail.com",
+            "homepage": "https://atymic.dev",
+            "role": "Developer"
+        }
+    ],
     "require-dev": {
     },
     "autoload": {
