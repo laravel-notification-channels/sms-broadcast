@@ -3,8 +3,8 @@
 namespace NotificationChannels\SmsBroadcast;
 
 use Atymic\SmsBroadcast\Api\Client;
-use Atymic\SmsBroadcast\Factory\ClientFactory;
 use Illuminate\Support\ServiceProvider;
+use Atymic\SmsBroadcast\Factory\ClientFactory;
 
 class SmsBroadcastServiceProvider extends ServiceProvider
 {
