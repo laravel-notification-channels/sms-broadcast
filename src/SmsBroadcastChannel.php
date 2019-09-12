@@ -17,7 +17,7 @@ class SmsBroadcastChannel
 
     public function send($notifiable, Notification $notification): void
     {
-        if (!$to = $notifiable->routeNotificationFor('smsbroadcast')) {
+        if (! $to = $notifiable->routeNotificationFor('smsbroadcast')) {
             return;
         }
 
