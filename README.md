@@ -1,5 +1,23 @@
 # Sms Broadcast Notification Channel
 
+<p align="center">
+    <a href="https://travis-ci.org/laravel-notification-channels/sms-broadcast">
+        <img src="https://travis-ci.org/laravel-notification-channels/sms-broadcast.svg?branch=master" alt="Build status">
+    </a>
+    <a href="https://packagist.org/packages/laravel-notification-channels/sms-broadcast">
+        <img src="https://poser.pugx.org/laravel-notification-channels/sms-broadcast/downloads" alt="Downloads">
+    </a>
+    <a href="https://packagist.org/packages/laravel-notification-channels/sms-broadcast">
+        <img src="https://poser.pugx.org/laravel-notification-channels/sms-broadcast/v/stable" alt="Latest release">
+    </a>
+    <a href="https://scrutinizer-ci.com/g/laravel-notification-channels/sms-broadcast/">
+        <img src="https://scrutinizer-ci.com/g/laravel-notification-channels/sms-broadcast/badges/coverage.png?b=master" alt="Code coverage">
+    </a>
+    <a href="LICENSE.md">
+        <img src="https://poser.pugx.org/laravel-notification-channels/sms-broadcast/license" alt="License">
+    </a>
+</p>
+
 This package makes it easy to send notifications using [Sms Broadcast](https://www.smsbroadcast.com.au/) with Laravel > 5.6 & 6.0.
 
 It uses my [Sms Broadcast PHP package](https://github.com/atymic/sms-broadcast-php) under the hood.
