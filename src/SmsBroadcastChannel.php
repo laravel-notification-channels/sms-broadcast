@@ -27,6 +27,10 @@ class SmsBroadcastChannel
             $message = new SmsBroadcastMessage($message);
         }
 
+        if (! $message instanceof SmsBroadcastMessage) {
+            return;
+        }
+
         $this->smsBroadcastClient->send(
             $to,
             $message->content,
