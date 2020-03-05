@@ -4,10 +4,10 @@
     "homepage": "http://laravel-notification-channels.com/",
     "license": "MIT",
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.2.5",
         "atymic/sms-broadcast": "^1.0",
-        "illuminate/notifications": "~5.6 || ~6.0",
-        "illuminate/support": "~5.6 || ~6.0"
+        "illuminate/notifications": "~5.6 || ~6.0 || ~7.0",
+        "illuminate/support": "~5.6 || ~6.0 || ~7.0"
     },
     "authors": [
         {
@@ -18,6 +18,7 @@
         }
     ],
     "require-dev": {
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "psr-4": {
