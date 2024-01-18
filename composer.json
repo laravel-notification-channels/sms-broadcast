@@ -4,7 +4,7 @@
     "homepage": "http://laravel-notification-channels.com/",
     "license": "MIT",
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.2",
         "atymic/sms-broadcast": "^1.0",
         "illuminate/notifications": "~5.6 || ~6.0 || ~7.0",
         "illuminate/support": "~5.6 || ~6.0 || ~7.0"
