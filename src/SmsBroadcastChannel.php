@@ -31,13 +31,19 @@ class SmsBroadcastChannel
             return;
         }
 
-        $this->smsBroadcastClient->send(
-            $to,
-            $message->content,
-            $message->sender,
-            $message->reference,
-            true,
-            $message->delay
-        );
+        try {
+            $this->smsBroadcastClient->send(
+                $to,
+                $message->content,
+                $message->sender,
+                $message->reference,
+                true,
+                $message->delay
+            );
+        } catch (\Exception $e) {
+            report($e);
+
+            return;
+        }
     }
 }
